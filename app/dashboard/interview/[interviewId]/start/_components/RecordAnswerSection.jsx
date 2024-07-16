@@ -15,8 +15,6 @@ function RecordAnswerSection({mockInterviewQuestions, activeQuestionIndex, inter
     const [loading, setLoading] = useState(false);
 
     const {
-        error,
-        interimResult,
         isRecording,
         results,
         startSpeechToText,

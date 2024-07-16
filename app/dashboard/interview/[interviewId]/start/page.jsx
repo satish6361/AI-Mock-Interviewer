@@ -13,7 +13,7 @@ function page({params}) {
 
     const [interviewData, setInterviewData] = useState();
     const [mockInterviewQuestion, setMockInterviewQuestion] = useState();
-    const [activeQuestionIndex, setActiveQuestionIndex] = useState(4);
+    const [activeQuestionIndex, setActiveQuestionIndex] = useState(0);
     
     
     useEffect(()=>{
@@ -63,7 +63,7 @@ function page({params}) {
             {activeQuestionIndex==mockInterviewQuestion?.length-1 
             && 
             <Link href={'/dashboard/interview/'+interviewData?.mockId+'/feedback'} >
-                <Button onClick>
+                <Button>
                     End Interview
                 </Button>
             </Link>

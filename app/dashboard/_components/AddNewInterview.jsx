@@ -41,7 +41,7 @@ function AddNewInterview() {
         console.log("AI Response: ", result.response.text())
         const MockJsonResponse = (result.response.text()).replace('```json','').replace('```', '')
         setJsonResponse(MockJsonResponse)
-        console.log(JSON.parse(MockJsonResponse));
+        // console.log(JSON.parse(MockJsonResponse));
         
         if(MockJsonResponse){
             const resp = await db.insert(MockInterview)
